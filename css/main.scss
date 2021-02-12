@@ -1,0 +1,234 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+.container {
+  width: 62.5%;
+  height: auto;
+  margin: auto;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+  background-image: url(/img/banner.jpg);
+  background-position: top;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  .heading {
+    margin: auto;
+    transform: translateY(40%);
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $color-primary;
+      display: flex;
+      justify-content: center;
+      @media (max-width: 815px) {
+        font-size: 6rem;
+      }
+      @media (max-width: 570px) {
+        font-size: 3.5rem;
+      }
+    }
+
+    &__logobox {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      padding: 5rem;
+      img {
+        width: 6.5rem;
+        @media (max-width: 680px) {
+          width: 4.5rem;
+        }
+      }
+    }
+
+    &__slogan {
+      font-size: $font-size-secondary;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: $color-primary;
+      text-align: center;
+      @media (max-width: 815px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.about-her-background {
+  background: $background-color-green;
+
+  .about-her {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    @media(max-width:980px){
+        display: block;
+        
+    }
+
+    .herPhoto {
+      width: 50%;
+      @media(max-width:980px){
+          width: 100%;
+      }
+
+      img {
+        display: block;
+        width: 60%;
+
+        @media(max-width:1440px){
+            width: 85%;
+        }
+        @media(max-width:980px){
+            margin: 0 auto;
+        }
+
+       
+      }
+    }
+
+    .about {
+      width: 50%;
+
+      @media(max-width:980px){
+          width: 100%;
+          margin-top: 2rem;
+          
+         
+      }
+      
+
+      &__title {
+        margin-top: 0;
+        font-size: $font-size-secondary;
+        letter-spacing: $letter-spacing-big;
+        color: $title-color;
+
+        @media(max-width:980px){
+            text-align: center;
+        }
+      }
+
+      &__context {
+        width: 70%;
+        font-size: $font-size-small;
+        line-height: $text-line-height;
+        letter-spacing: $letter-spacing-small;
+        color:$text-color;
+
+        @media(max-width:1440px){
+            width: 90%;
+        }
+
+        @media(max-width:980px){
+            width: 100%;
+        }
+      }
+
+      p{
+
+        @media(max-width:980px){
+            margin: 0;
+            padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.how-design{
+    width: 100%;
+    background-image: linear-gradient( to right bottom, rgba(black, 0.725), rgba($color-green, 0.795)), url(/img/howdesign.jpg);
+
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+
+    &__titlebox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10rem;
+        padding-bottom: 1rem;
+        position: relative;
+
+        img{
+            margin-top: -18rem;
+            width: 33rem;
+            position: absolute;
+
+            @media(max-width:1440px){
+                margin-top: -13rem;
+                width: 28rem;
+            }
+    
+            @media(max-width:980px){
+                margin-top: -7rem;
+                width: 20rem;
+            }
+        }
+    }
+
+    &__title{
+        margin-top: 0;
+        display: inline-block;
+        font-size: $font-size-secondary;
+        letter-spacing: $letter-spacing-big;
+        color: $title-color;
+        -webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        
+    }
+
+    &__content{
+        
+        font-size: $font-size-small;
+        line-height: $text-line-height;
+        letter-spacing: $letter-spacing-small;
+        color:$text-color;
+        margin: 0 auto;
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+        width: 70%;
+
+        @media(max-width:1440px){
+            width: 90%;
+        }
+
+        @media(max-width:980px){
+            width: 100%;
+        }
+    }
+}
