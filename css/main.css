@@ -36,8 +36,8 @@ body {
 
 .header .heading {
   margin: auto;
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
 }
 
 .header .heading__title {
@@ -455,5 +455,115 @@ body {
   width: calc(100% / 4);
   margin-bottom: 2rem;
   padding-right: 1.5rem;
+}
+
+.section-news {
+  background: linear-gradient(45deg, #9CAA85, #98AA7B);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10rem 0;
+}
+
+.section-news__titleArea {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.section-news__titleArea-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  color: #F6C4A7;
+  padding: 0 5rem;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+}
+
+.section-news__newsArea {
+  width: 55%;
+}
+
+.section-news__newsArea-title {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #F6C4A7;
+  padding-bottom: 1rem;
+}
+
+.section-news__newsArea-contentArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5rem;
+}
+
+.section-news__newsArea-contentArea-icon {
+  width: 1.6rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.section-news__newsArea-contentArea-icon img {
+  width: 100%;
+  display: block;
+}
+
+.section-news__newsArea-contentArea-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.3rem;
+  color: #FFE9DA;
+}
+
+.section-footer {
+  width: 100%;
+  padding-top: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6C4A7;
+}
+
+.section-footer__title {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.section-footer__logoArea {
+  width: 20%;
+  padding: 2rem 0;
+}
+
+.section-footer__logoArea img {
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+.section-footer__contactInfo {
+  font-size: 0.9rem;
+  padding-bottom: 3rem;
+}
+
+.section-footer__contactInfo p {
+  padding: 0;
+  margin: 0;
+}
+
+.section-footer__contactInfo-title {
+  line-height: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */

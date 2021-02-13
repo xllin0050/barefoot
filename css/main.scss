@@ -33,7 +33,7 @@ body {
 
   .heading {
     margin: auto;
-    transform: translateY(40%);
+    transform: translateY(15%);
 
     &__title {
       margin: 0;
@@ -335,12 +335,14 @@ body {
   width: 100%;
   height: auto;
   background-color: #679A9A;
+
   &__logoArea{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 7.5rem;
+
     &-logo{
       width: 8%;
     }
@@ -354,28 +356,125 @@ body {
       width: 30%;
       display: flex;
       justify-content: center;
+
       h3{
         margin: 0;
         font-size: $font-size-secondary;
-      letter-spacing: $letter-spacing-big;
-      color: $title-color;
+        letter-spacing: $letter-spacing-big;
+        color: $title-color;
       }
-
-      
-      
-      
-      
     }
 
     &-photos{
       width: 70%;
       display: flex;
       flex-wrap: wrap;
+
       img{
         width: calc(100% / 4);
         margin-bottom: 2rem;
         padding-right: 1.5rem ;
       }
     }
+  }
+}
+
+.section-news{
+  background: $background-color-green;
+  display: flex;
+
+  padding: 10rem 0;
+
+  &__titleArea{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+
+    &-title{
+      font-size: $font-size-secondary;
+      letter-spacing: $letter-spacing-big;
+      color: $title-color;
+      padding: 0 5rem;
+      writing-mode: vertical-lr;
+      -webkit-writing-mode: vertical-lr;
+    }
+  }
+
+  &__newsArea{
+    width: 55%;
+    
+
+    &-title{
+      font-size: $font-size-tertiary ;
+      letter-spacing: $letter-spacing-big;
+      color: $title-color;
+      padding-bottom: 1rem;
+    }
+
+    &-contentArea{
+      display: flex;
+      margin-left: 5rem;
+      &-icon{
+        width: $font-size-small;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+        img{
+          width: 100%;
+          display: block;
+          
+        }
+      }
+
+      &-text{
+      font-size: $font-size-small;
+      line-height: $text-line-height;
+      letter-spacing: $letter-spacing-small;
+      color:$text-color;
+      
+      }
+    }
+  }
+}
+
+.section-footer{
+  width: 100%;
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6C4A7;
+
+  &__title{
+    font-size: $font-size-secondary;
+      letter-spacing: $letter-spacing-big;
+      // color: $title-color;
+  }
+
+  &__logoArea{
+    width: 20%;
+    padding: 2rem 0;
+    
+    img{
+      width: 30%;
+      display: block;
+      margin: auto;
+    }
+    
+  }
+
+  &__contactInfo{
+    font-size: 0.9rem;
+    padding-bottom: 3rem;
+    
+
+    p{
+      padding: 0;
+      margin: 0;
+    }
+
+    &-title{
+      line-height: $text-line-height;
+    }
+
   }
 }
