@@ -1,0 +1,51 @@
+[
+  {
+  "productType":"Messenger Bag",
+    "productName":"Malibu",
+  "productPrice":"2300",
+  "productDesc":"明確的線條與藍色調的深淺色塊，像是海上的波浪。",
+  "productPic":"mockData/productImg/Messenger_Bag_Malibu.png"
+
+  },
+  {
+    "productType":"Messenger Bag",
+    "productName":"Sterling",
+    "productPrice":"2500",
+    "productDesc":"金屬手工藝行業有著悠久的歷史。以白線代表金屬受光照射而出現的光澤，褐色建立支撐感。",
+    "productPic":"mockData/productImg/Messenger_Bag_Sterling.png"
+  
+  },
+    {
+      "productType":"Shoulder Bag",
+      "productName":"Pumpkin",
+      "productPrice":"2100",
+      "productDesc":"喜歡在咖哩裡加入南瓜，將南瓜的香氣與甜味化成色塊與線條。",
+      "productPic":"mockData/productImg/Expandable_Shoulder_Bag_Pumpkin_Spice.png"
+    
+      },
+      {
+        "productType":"Shoulder Bag",
+        "productName":"Starburst",
+        "productPrice":"2300",
+        "productDesc":"在星星上面看星星的樣子，金黃耀眼。",
+        "productPic":"mockData/productImg/Expandable_Shoulder_Bag_Starburst.png"
+      
+        },
+        {
+          "productType":"Tote",
+          "productName":"Daffodil",
+          "productPrice":"1800",
+          "productDesc":"黃色的水仙將所有的生命力用於展示一個顏色，吸引整個世界來看它。",
+          "productPic":"mockData/productImg/Everyday_Crossbody_Tote_Daffodil.png"
+        
+          },
+          {
+            "productType":"Tote",
+            "productName":"Sage",
+            "productPrice":"1900",
+            "productDesc":"療癒的綠色與活力的黃色，帶來療效。",
+            "productPic":"mockData/productImg/Everyday_Crossbody_Tote_Sage.png"
+          
+            }
+
+]
