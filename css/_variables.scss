@@ -6,9 +6,9 @@ $color-green-d:#98AA7B;
 
 $color-green-md:#4E5442;
 
-$text-color:#FFE9DA;
+$text-color:#4E5442;
 
-$title-color:#F6C4A7;
+$title-color:#CB7351;
 
 $font-size-secondary:2.5rem;
 
@@ -25,3 +25,28 @@ $letter-spacing-small:0.3rem;
 
 $background-color-green:linear-gradient(45deg,$color-green,$color-green-d);
 
+@mixin box-shadow {
+  -webkit-box-shadow: 2px 8px 12px 4px rgba(0,0,0,0.5); 
+  box-shadow: 2px 8px 12px 4px rgba(0,0,0,0.5);
+} 
+
+@mixin background-color-green {
+  background: rgb(172,214,152);
+  background: -moz-linear-gradient(top, rgb(172,214,152) 0%, rgb(246,196,167) 100%);
+  background: -webkit-linear-gradient(top, rgb(172,214,152) 0%, rgb(246,196,167) 100%);
+  background: linear-gradient(to bottom, rgb(172,214,152) 0%, rgb(246,196,167) 100%);
+}
+
+@mixin background-color-pink {
+  background: rgb(246,196,167);
+  background: -moz-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%);
+  background: -webkit-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%);
+  background: linear-gradient(to bottom, rgb(246,196,167) 0%, rgb(172,214,152) 100%);
+}
+
+@mixin background-color-pink-pic {
+  background: rgb(246,196,167);
+  background-image: -moz-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
+  background-image: -webkit-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
+  background-image: linear-gradient(to bottom, rgb(246,196,167) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
+}

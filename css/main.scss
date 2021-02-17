@@ -30,7 +30,7 @@ body {
   background-image: url(/img/banner.jpg);
   background-position: top;
   background-size: cover;
-  // width: 100%;
+
   height: 100vh;
 
   .heading {
@@ -83,7 +83,8 @@ body {
 }
 
 .about-her-background {
-  background: $background-color-green;
+  
+  @include background-color-green
 
   .about-her {
     width: 100%;
@@ -108,6 +109,7 @@ body {
       img {
         display: block;
         width: 60%;
+        @include box-shadow;
 
         @media(max-width:1440px){
             width: 75%;
@@ -172,7 +174,13 @@ body {
 
 .how-design{
     width: 100%;
-    background-image: linear-gradient( to right bottom, rgba(black, 0.725), rgba($color-green, 0.795)), url(/img/howdesign.jpg);
+
+    @include background-color-pink-pic;
+
+    
+
+
+    // background-image: @include background-color-pink, url(/img/howdesign.jpg);
 
     background-size: cover;
     background-position:top;
@@ -236,13 +244,14 @@ body {
 }
 
 .section-background{
-  background: $background-color-green;
+  @include background-color-green;
+  padding-top: 5rem;
+  
 
   .section-we-think{
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 10rem 0 5rem;
 
     @media(max-width:1110px){
         display: block;
@@ -258,6 +267,7 @@ body {
     img {
       display: block;
       width: 80%;
+      @include box-shadow;
   
       @media(max-width:1440px){
           width: 90%;
@@ -285,13 +295,17 @@ body {
        
     }
     
+    h3{
+      margin-top: 0;
+    }
 
     &__title {
-      margin-top: 8rem;
+      // margin-top: 8rem;
       margin-left: -2rem;
       font-size: $font-size-secondary;
       letter-spacing: $letter-spacing-big;
       color: $title-color;
+      
 
       @media(max-width:1110px){
           text-align: center;
@@ -334,9 +348,11 @@ body {
 }
 
 .section-products{
+  @include background-color-pink;
+  
   width: 100%;
   height: auto;
-  background-color: #679A9A;
+  
 
   &__logoArea{
     width: 100%;
@@ -356,6 +372,7 @@ body {
 
   &__productsPhotoArea{
     width: 100%;
+    padding-bottom: 2.5rem;
     display: flex;
 
     @media(max-width:1110px){
@@ -402,14 +419,14 @@ body {
 
 
       img{
-        width: calc(100% / 4);
-        margin-bottom: 2rem;
-        padding-right: 1.5rem ;
+        width: calc(100% / 3);
+        // margin: 1rem 0rem;
+        padding: 1rem;
+        // @include box-shadow;
+
 
         @media(max-width:1110px){
-          width: calc(100% / 3);
-          padding-right: unset;
-          padding: 0 1rem;
+          
         }
 
         @media(max-width:860px){
@@ -425,7 +442,8 @@ body {
 }
 
 .section-news{
-  background: $background-color-green;
+  @include background-color-green;
+  
   display: flex;
 
   padding: 10rem 0;
@@ -452,12 +470,13 @@ body {
       font-size: $font-size-tertiary ;
       letter-spacing: $letter-spacing-big;
       color: $title-color;
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
 
     &-contentArea{
       display: flex;
       margin-left: 5rem;
+      padding-bottom: 3rem;
       &-icon{
         width: $font-size-small;
         margin-top: 0.5rem;
@@ -481,19 +500,22 @@ body {
 }
 
 .section-footer{
+  @include background-color-pink;
+  
   width: 100%;
-  padding-top: 12rem;
+  padding: 10rem 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F6C4A7;
+  
 
   @media(max-width:1110px){
-  padding-top: 6rem;
+  padding-top: 5rem;
 
   }
 
   &__title{
+    color: $title-color;
     font-size: $font-size-secondary;
       letter-spacing: $letter-spacing-big;
 
@@ -522,7 +544,14 @@ body {
     }
 
     &-title{
+      color: $text-color;
+      
       line-height: $text-line-height;
+    }
+
+    &-text{
+      color: $text-color;
+
     }
 
   }
