@@ -1,4 +1,5 @@
-let productList = document.querySelector('#productList')
+const productList = document.querySelector('#productList')
+const newsList = document.querySelector('#newsList')
 
 let aboutTitle = document.querySelector('.about__title')
 let weThinkTitle = document.querySelector('.we-think__title')
@@ -21,20 +22,14 @@ window.addEventListener('scroll', function() {
 
 })
 
-    
-
   function getProductInfo(){
 
     fetch('/mockData/products.json')
-
       .then(response => response.json())
-
       .then(
         function(products){
 
-          productArr = products
-
-          productArr.forEach(el=>{
+          products.forEach(el=>{
             const productType = el.productType
             const productName = el.productName
             const productPrice = el.productPrice
@@ -42,14 +37,38 @@ window.addEventListener('scroll', function() {
             const productPic = el.productPic
 
             productList.innerHTML +=`
-            
             <img src="${productPic}" alt="">
-
             `
-            console.log(productPrice);
           })
         }
       )
   }
 
   getProductInfo()
+
+  function getNewsInfo(){
+    
+    fetch('/mockData/news.json')
+    .then(response => response.json())
+    .then(
+      function(newsData){
+
+         newsData.forEach(el=>{
+           const newsType = el.newsType
+           const newsTitle = el.newsTitle
+
+           newsList.innerHTML +=`
+           <div class="section-news__newsArea-title">${newsType}</div>
+           <div class="section-news__newsArea-contentArea">
+               <div class="section-news__newsArea-contentArea-icon">
+                   <img src="/img/logo.svg" alt="">
+               </div>
+               <div class="section-news__newsArea-contentArea-text">${newsTitle}</div>
+           </div>
+           `
+         })
+      }
+    )
+  }
+
+  getNewsInfo()
