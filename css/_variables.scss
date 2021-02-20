@@ -25,6 +25,13 @@ $letter-spacing-small:0.3rem;
 
 $background-color-green:linear-gradient(45deg,$color-green,$color-green-d);
 
+@mixin backface-visibility{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 @mixin box-shadow {
   -webkit-box-shadow: 2px 8px 12px 4px rgba(0,0,0,0.5); 
   box-shadow: 2px 8px 12px 4px rgba(0,0,0,0.5);

@@ -6,10 +6,6 @@ const ele =document.querySelector('#ele')
 const productList = document.querySelector('#productList')
 const newsList = document.querySelector('#newsList')
 
-
-
-const aboutTitle = document.querySelector('.about__title')
-const weThinkTitle = document.querySelector('.we-think__title')
 let scroll_position = 0;
 
 window.addEventListener('scroll', function() {
@@ -42,6 +38,14 @@ window.addEventListener('scroll', function() {
   }
 
 })
+
+const cards = document.querySelectorAll(".section-area__content-face");
+
+function flipCard() {
+  this.classList.toggle("flip");
+}
+cards.forEach((card) => card.addEventListener("click", flipCard));
+
 
   // 產品資料
   function getProductInfo(){
