@@ -10,21 +10,35 @@
 
 <body>
     <header class="header">
+
         <img src="img/banner/bannerfix2.png" class="header__background" id="bg" alt="">
         <img src="img/banner/stone.png" class="header__background" id="stone" alt="">
         <img src="img/banner/grassfix2.png"class="header__background" id="grass" alt="">
         <img src="img/banner/eleph.png" class="header__background" id="ele" alt="">
+        
 
-        <div class="heading">
-            <h1 class="heading__title">barefoot</h1>
-            <div class="heading__logobox">
-                <img src="/img/logo.svg" alt="" class="logo">
+
+        <div class="header__navbar">
+            <ul>
+                <li><a href="#founder">founder</a></li>
+                <li><a href="#idea">idea</a></li>
+                <li><a href="#values">values</a></li>
+                <li><a href="#products">products</a></li>
+                <li><a href="#news">news</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="heading" id="heading">
+            <h1 class="heading__title" id="headingTitle">barefoot</h1>
+            <div class="heading__logobox" id="headingLogo">
+                <img src="/img/logo.svg" alt="">
             </div>
-            <div class="heading__slogan">timeless and lasts a lifetime</div>
+            <div class="heading__slogan" id="headingSlogan">timeless and lasts a lifetime</div>
         </div>
     </header>
 
-    <section class="section-area">
+    <section id="founder" class="section-area">
         <div class="section-area__content container">
             <div class="section-area__content-face hvr-grow">
                 <div class="section-area__content-face__Front">
@@ -44,7 +58,7 @@
         </div>
     </section>
 
-    <section class="section-how-design">
+    <section id="idea" class="section-how-design">
         <div class="container">
             <div class="section-how-design__titlebox">
                 <h2>如何設計</h2>
@@ -56,7 +70,7 @@
         </div>
     </section>
 
-    <section class="section-area">
+    <section id="values" class="section-area">
         <div class="section-area__content container">
             <div class="section-area__content-face hvr-grow margin-top: 2rem;">
                 <div class="section-area__content-face__Front">
@@ -75,7 +89,7 @@
         </div>
     </section>
 
-    <section class="section-products">
+    <section id="products" class="section-products">
         <div class="section-products__logoArea">
             <img src="/img/logo.svg" alt="" class="section-products__logoArea-logo">
         </div>
@@ -88,7 +102,7 @@
         </div>
     </section>
 
-    <section class="section-news">
+    <section id="news" class="section-news">
         <div class="section-news__titleArea">
             <div class="section-news__titleArea-title">
                 最新消息
@@ -105,7 +119,7 @@
         </div>
     </section>
 
-    <footer class="section-footer">
+    <footer id="contact" class="section-footer">
         <div class="section-footer__title">聯絡我們</div>
         <div class="section-footer__logoArea">
             <img src="/img/logo.svg" alt="" class="section-footer__logoArea-logo">
@@ -125,12 +139,7 @@
 	<script src="/js/vanilla-title.js"></script>
     <script src="/js/index.js"></script>
     <script type="text/javascript">
-		VanillaTilt.init(document.querySelector("#map"), {
-			max: 25,
-			speed: 100,
-			glare: true,
-			"max-glare":1
-		});
+		
 	</script>
 </body>
 

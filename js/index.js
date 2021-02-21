@@ -1,7 +1,13 @@
 const bg =document.querySelector('#bg')
 const stone =document.querySelector('#stone')
 const ele =document.querySelector('#ele')
+const navbar = document.querySelector('.header__navbar')
+const heading =document.querySelector('#heading')
 
+const headingTitle =document.querySelector('#headingTitle')
+const headingSlogan =document.querySelector('#headingSlogan')
+const headingLogo =document.querySelector('#headingLogo')
+console.log(bg);
 
 const productList = document.querySelector('#productList')
 const newsList = document.querySelector('#newsList')
@@ -10,35 +16,54 @@ let scroll_position = 0;
 
 window.addEventListener('scroll', function() {
   scroll_position = window.scrollY;
+  console.log(scroll_position);
 
-  // banner
+
+
+  // 橫幅視差效果
   bg.style.top = scroll_position * 0.5 + 'px';
-  stone.style.top = scroll_position * 2.8 + 'px';
+  stone.style.top = scroll_position * 2 + 'px';
   grass.style.top = scroll_position * 0.5 + 'px';
+  heading.style.top = scroll_position * 1 + 'px';
+
+  headingTitle.style.top = scroll_position * 1 + 'px';
+  headingLogo.style.top = scroll_position * 1 + 'px';
+  headingSlogan.style.top = scroll_position * 1 + 'px';
   ele.style.bottom = scroll_position * 0.5 + 'px';
 
-  if(scroll_position>=210){
-    ele.style.display="none"
+  if(scroll_position>=80){
+    stone.style.opacity="0"
   }else{
-    ele.style.display="unset"
+    stone.style.opacity="1"
   }
 
-  // 關於標題
-  if(scroll_position>300){
-    aboutTitle.classList.add('tracking-in-expand')
+  if(scroll_position>=145){
+    ele.style.opacity="0"
+    headingSlogan.style.display="none"
   }else{
-    aboutTitle.classList.remove('tracking-in-expand')
+    ele.style.opacity="1"
+    headingSlogan.style.display="unset"
   }
 
-  // 理念標題
-  if(scroll_position>1650){
-    weThinkTitle.classList.add('tracking-in-expand')
+  if(scroll_position>=330){
+    headingLogo.style.opacity="0"
   }else{
-    weThinkTitle.classList.remove('tracking-in-expand')
+    headingLogo.style.opacity="1"
+  }
+
+  // 導覽列固定
+
+  navbar.classList.toggle('sticky',window.scrollY>530)
+
+  if(scroll_position>530){
+  headingTitle.style.color='transparent'
+  }else{
+  headingTitle.style.color='#FF9976'
   }
 
 })
 
+// 卡片翻轉效果
 const cards = document.querySelectorAll(".section-area__content-face");
 
 function flipCard() {
@@ -46,8 +71,16 @@ function flipCard() {
 }
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
+// 地圖動態效果
+VanillaTilt.init(document.querySelector("#map"), {
+  max: 25,
+  speed: 100,
+  glare: true,
+  "max-glare":1
+});
 
-  // 產品資料
+
+  // 抓取 Product資料
   function getProductInfo(){
 
     fetch('/mockData/products.json')
@@ -72,7 +105,7 @@ cards.forEach((card) => card.addEventListener("click", flipCard));
 
   getProductInfo()
 
-  // 消息資料
+  // 抓取 News 資料
   function getNewsInfo(){
     
     fetch('/mockData/news.json')
