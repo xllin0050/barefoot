@@ -1,24 +1,31 @@
+const navbar = document.querySelector('.header__navbar')
+const m_btn = document.querySelector('.header__navbar-m-btn')
+const m_list = document.querySelector('.header__navbar-m-list')
+
 const bg =document.querySelector('#bg')
 const stone =document.querySelector('#stone')
 const ele =document.querySelector('#ele')
-const navbar = document.querySelector('.header__navbar')
 const heading =document.querySelector('#heading')
-
 const headingTitle =document.querySelector('#headingTitle')
 const headingSlogan =document.querySelector('#headingSlogan')
 const headingLogo =document.querySelector('#headingLogo')
-console.log(bg);
 
 const productList = document.querySelector('#productList')
 const newsList = document.querySelector('#newsList')
+
+// 手機板導覽選單切換
+m_btn.addEventListener('click',function () {
+  if (m_list.style.display === 'block'){
+    m_list.style.display='none'
+  }else{
+    m_list.style.display='block'
+  }
+})
 
 let scroll_position = 0;
 
 window.addEventListener('scroll', function() {
   scroll_position = window.scrollY;
-  console.log(scroll_position);
-
-
 
   // 橫幅視差效果
   bg.style.top = scroll_position * 0.5 + 'px';
