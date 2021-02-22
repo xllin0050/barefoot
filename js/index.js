@@ -91,23 +91,59 @@ VanillaTilt.init(document.querySelector("#map"), {
   function getProductInfo(){
 
     fetch('/mockData/products.json')
-      .then(response => response.json())
-      .then(
-        function(products){
 
-          products.forEach(el=>{
-            const productType = el.productType
-            const productName = el.productName
-            const productPrice = el.productPrice
-            const productDesc = el.productDesc
-            const productPic = el.productPic
+    .then(response => response.json())
 
-            productList.innerHTML +=`
-            <img src="${productPic}" alt="">
+    .then(
+      function(products){
+      products.forEach(el=>{
+        const productId = el.productId
+        const productType = el.productType
+        const productName = el.productName
+        const productPrice = el.productPrice
+        const productDesc = el.productDesc
+        const productPic = el.productPic
+
+        productList.innerHTML +=`
+        <div id="product" class="section-products__productsPhotoArea-photos-item" data-name="${productName}"><img src="${productPic}" alt=""></div>
+        <!-- The Modal -->
+        <div id="Modal" class="section-products__productsPhotoArea-photos-modal">
+        
+          
+        
+        </div>
+        `
+
+        const modal = document.querySelector('#Modal')
+
+        const btns = document.querySelectorAll('#product')
+        
+        btns.forEach(function(btn){
+          btn.addEventListener('click',function(){
+            modal.style.display = 'block'
+            modal.innerHTML =`
+            <div class="section-products__productsPhotoArea-photos-modal-content">
+            <span id="close" class="section-products__productsPhotoArea-photos-modal-content-close">&times;</span>
+            <p>${btn.dataset.name}</p>
+            </div>
+        
             `
+
+          const span = document.querySelector('#close')
+
+          span.addEventListener('click', function(){
+            modal.style.display ='none'
           })
-        }
-      )
+          })
+        })
+
+        window.addEventListener('click',function(event){
+          if(event.target === modal){
+            modal.style.display='none'
+        }})
+        
+      })
+    })
   }
 
   getProductInfo()
