@@ -54,8 +54,11 @@ window.addEventListener('scroll', function() {
 
   if(scroll_position>=330){
     headingLogo.style.opacity="0"
+  }else if(scroll_position>=230){
+    headingLogo.style.opacity="0.5"
   }else{
     headingLogo.style.opacity="1"
+
   }
 
   // 導覽列固定
@@ -63,9 +66,9 @@ window.addEventListener('scroll', function() {
   navbar.classList.toggle('sticky',window.scrollY>530)
 
   if(scroll_position>530){
-  headingTitle.style.color='transparent'
+    headingTitle.style.opacity=0
   }else{
-  headingTitle.style.color='#FF9976'
+    headingTitle.style.opacity=1
   }
 
 })

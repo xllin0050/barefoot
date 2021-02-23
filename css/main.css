@@ -266,7 +266,6 @@ body {
   font-size: 9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #FF9976;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,6 +274,11 @@ body {
           justify-content: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-image: url(https://media.giphy.com/media/3oEdv5SY4LBHUBe2o8/source.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 @media (max-width: 815px) {
