@@ -105,12 +105,10 @@ VanillaTilt.init(document.querySelector("#map"), {
         const productPic = el.productPic
 
         productList.innerHTML +=`
-        <div id="product" class="section-products__productsPhotoArea-photos-item" data-name="${productName}"><img src="${productPic}" alt=""></div>
+        <div id="product" class="section-products__productsPhotoArea-photos-item" data-name="${productName}" data-desc="${productDesc}" data-price="${productPrice}"><img src="${productPic}" alt=""></div>
         <!-- The Modal -->
         <div id="Modal" class="section-products__productsPhotoArea-photos-modal">
-        
-          
-        
+
         </div>
         `
 
@@ -124,7 +122,9 @@ VanillaTilt.init(document.querySelector("#map"), {
             modal.innerHTML =`
             <div class="section-products__productsPhotoArea-photos-modal-content">
             <span id="close" class="section-products__productsPhotoArea-photos-modal-content-close">&times;</span>
-            <p>${btn.dataset.name}</p>
+            <p class="section-products__productsPhotoArea-photos-modal-content-name">${btn.dataset.name}</p>
+            <p class="section-products__productsPhotoArea-photos-modal-content-desc">${btn.dataset.desc}</p>
+            <p class="section-products__productsPhotoArea-photos-modal-content-price">${btn.dataset.price}</p>
             </div>
         
             `
