@@ -39,21 +39,21 @@ $background-color-green:linear-gradient(45deg,$color-green,$color-green-d);
 
 @mixin background-color-green {
   background: rgb(172,214,152);
-  background: -moz-linear-gradient(top, rgb(172,214,152) 0%, rgb(246,196,167) 100%);
-  background: -webkit-linear-gradient(top, rgb(172,214,152) 0%, rgb(246,196,167) 100%);
-  background: linear-gradient(to bottom, rgb(172,214,152) 0%, rgb(246,196,167) 100%);
+  background: -moz-linear-gradient(top, rgb(172,214,152) 0%, rgb(179, 184, 176) 100%);
+  background: -webkit-linear-gradient(top, rgb(172,214,152) 0%, rgb(179, 184, 176) 100%);
+  background: linear-gradient(to bottom, rgb(172,214,152) 0%, rgb(179, 184, 176) 100%);
 }
 
 @mixin background-color-pink {
-  background: rgb(246,196,167);
-  background: -moz-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%);
-  background: -webkit-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%);
-  background: linear-gradient(to bottom, rgb(246,196,167) 0%, rgb(172,214,152) 100%);
+  background: rgb(179, 184, 176);
+  background: -moz-linear-gradient(top, rgb(179, 184, 176) 0%, rgb(172,214,152) 100%);
+  background: -webkit-linear-gradient(top, rgb(179, 184, 176) 0%, rgb(172,214,152) 100%);
+  background: linear-gradient(to bottom, rgb(179, 184, 176) 0%, rgb(172,214,152) 100%);
 }
 
 @mixin background-color-pink-pic {
-  background: rgb(246,196,167);
-  background-image: -moz-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
-  background-image: -webkit-linear-gradient(top, rgb(246,196,167) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
-  background-image: linear-gradient(to bottom, rgb(246,196,167) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
+  background: rgb(179, 184, 176);
+  background-image: -moz-linear-gradient(top, rgb(179, 184, 176) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
+  background-image: -webkit-linear-gradient(top, rgb(179, 184, 176) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
+  background-image: linear-gradient(to bottom, rgb(179, 184, 176) 0%, rgb(172,214,152) 100%), url(/img/howdesign.jpg);
 }

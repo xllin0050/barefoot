@@ -336,8 +336,8 @@ body {
 
 .section-area {
   background: #acd698;
-  background: -webkit-gradient(linear, left top, left bottom, from(#acd698), to(#f6c4a7));
-  background: linear-gradient(to bottom, #acd698 0%, #f6c4a7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#acd698), to(#b3b8b0));
+  background: linear-gradient(to bottom, #acd698 0%, #b3b8b0 100%);
 }
 
 .section-area__content {
@@ -496,9 +496,9 @@ body {
 
 .section-how-design {
   width: 100%;
-  background: #f6c4a7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6c4a7), to(#acd698)), url(/img/howdesign.jpg);
-  background-image: linear-gradient(to bottom, #f6c4a7 0%, #acd698 100%), url(/img/howdesign.jpg);
+  background: #b3b8b0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b3b8b0), to(#acd698)), url(/img/howdesign.jpg);
+  background-image: linear-gradient(to bottom, #b3b8b0 0%, #acd698 100%), url(/img/howdesign.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -600,9 +600,9 @@ body {
 }
 
 .section-products {
-  background: #f6c4a7;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f6c4a7), to(#acd698));
-  background: linear-gradient(to bottom, #f6c4a7 0%, #acd698 100%);
+  background: #b3b8b0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3b8b0), to(#acd698));
+  background: linear-gradient(to bottom, #b3b8b0 0%, #acd698 100%);
   width: 100%;
   height: auto;
 }
@@ -794,8 +794,8 @@ body {
 
 .section-news {
   background: #acd698;
-  background: -webkit-gradient(linear, left top, left bottom, from(#acd698), to(#f6c4a7));
-  background: linear-gradient(to bottom, #acd698 0%, #f6c4a7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#acd698), to(#b3b8b0));
+  background: linear-gradient(to bottom, #acd698 0%, #b3b8b0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,9 +935,9 @@ body {
 }
 
 .section-footer {
-  background: #f6c4a7;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f6c4a7), to(#acd698));
-  background: linear-gradient(to bottom, #f6c4a7 0%, #acd698 100%);
+  background: #b3b8b0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3b8b0), to(#acd698));
+  background: linear-gradient(to bottom, #b3b8b0 0%, #acd698 100%);
   width: 100%;
   padding: 10rem 0 3rem;
   display: -webkit-box;
