@@ -60,16 +60,15 @@ window.addEventListener('scroll', function() {
     headingLogo.style.opacity="1"
 
   }
-
-  // 導覽列固定
-
-  navbar.classList.toggle('sticky',window.scrollY>530)
-
+  
   if(scroll_position>530){
     headingTitle.style.opacity=0
   }else{
     headingTitle.style.opacity=1
   }
+
+  // 導覽列顯示
+  navbar.classList.toggle('sticky',window.scrollY>530)
 
 })
 

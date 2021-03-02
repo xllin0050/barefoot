@@ -76,10 +76,6 @@ body {
     transition: 0.5s;
     z-index: 999;
 
-    @media (max-width: 560px){
-      // visibility: hidden;
-    }
-
     & ul{
       position: relative;
       display: flex;
@@ -88,7 +84,6 @@ body {
 
       @media (max-width: 560px){
         display: block;
-        // visibility: hidden;
       }
 
       & li{
@@ -107,9 +102,6 @@ body {
           display: none;
         }
       }
-
-      
-
     }
 
     &-m{
