@@ -106,6 +106,7 @@ VanillaTilt.init(document.querySelector("#map"), {
         const productDesc = el.productDesc
         const productPic = el.productPic
 
+        // 產品圖
         productList.innerHTML +=`
         <div id="product" class="section-products__productsPhotoArea-photos-item" data-name="${productName}" data-desc="${productDesc}" data-price="${productPrice}"><img src="${productPic}" alt=""></div>
         <!-- The Modal -->
@@ -114,6 +115,7 @@ VanillaTilt.init(document.querySelector("#map"), {
         </div>
         `
 
+        // 單獨產品顯示 modal
         const modal = document.querySelector('#Modal')
 
         const btns = document.querySelectorAll('#product')
@@ -128,9 +130,9 @@ VanillaTilt.init(document.querySelector("#map"), {
             <p class="section-products__productsPhotoArea-photos-modal-content-desc">${btn.dataset.desc}</p>
             <p class="section-products__productsPhotoArea-photos-modal-content-price">${btn.dataset.price}</p>
             </div>
-        
             `
 
+          // modal 按鈕關閉方法
           const span = document.querySelector('#close')
 
           span.addEventListener('click', function(){
@@ -139,6 +141,7 @@ VanillaTilt.init(document.querySelector("#map"), {
           })
         })
 
+        // modal 點擊他處關閉方法
         window.addEventListener('click',function(event){
           if(event.target === modal){
             modal.style.display='none'
