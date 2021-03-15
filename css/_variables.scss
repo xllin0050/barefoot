@@ -25,6 +25,9 @@ $letter-spacing-small:0.3rem;
 
 $background-color-green:linear-gradient(45deg,$color-green,$color-green-d);
 
+
+  
+
 @mixin backface-visibility{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
